@@ -139,9 +139,13 @@ class _BaseGiffDialogState extends State<BaseGiffDialog> with TickerProviderStat
                 padding: const EdgeInsets.only(top: 16.0),
                 child: widget.title,
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: widget.description,
+              Flexible(
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: widget.description,
+                  ),
+                ),
               ),
               _buildButtonsBar(context)
             ],
@@ -170,9 +174,13 @@ class _BaseGiffDialogState extends State<BaseGiffDialog> with TickerProviderStat
                 padding: const EdgeInsets.only(top: 16.0),
                 child: widget.title,
               ),
-              Padding(
-                padding: const EdgeInsets.all(3.0),
-                child: widget.description,
+              Flexible(
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: const EdgeInsets.all(3.0),
+                    child: widget.description,
+                  ),
+                ),
               ),
               _buildButtonsBar(context),
             ],
